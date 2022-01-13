@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <title>object demo</title>
+</head>
+<script>
+
+   // let s="hello world welcome javascript";
+    //alert(s.slice(2,5));
+   // <p id="demo"></p>
+
+   // let str = "Apple, Banana, Kiwi";
+//alert(str.slice(7,13)); 
+
+
+let str = "Apple, Banana, orange";
+alert(str.slice(-12,-6)); 
+alert(str.slice(-7,-3));
+alert(str.slice(2,4));
+alert(str.slice(7));
+document.getElementById("demo").innerHTML = str.slice(7);
+
+//<p id="demo"></p>/// SUBSTRING
+
+//<script>
+//let t1 = "Hello world!";
+//let t2 = text.substring(1,4);
+
+//document.getElementById("demo").innerHTML = t2;
+//</script>
+
+
+
+
+
+
+</script>
+<body>
+    
+   // <div style="background-color: deeppink;"/>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <p id="original"></p>
+    <h1>Using Substr</h1>
+    <p id='l'></p>
+
+    <div style="background-color: aqua;">
+    <p>
+        <mark>Using  var s1=s.substr(7,20); the output is as below: starts counting the str length with 0 </mark>
+
+        </p>
+    <p id="p1"></p>
+    </div>
+
+    <h1>Using Slice</h1>
+
+
+
+    <script>
+        // var s="Jim";
+        // s+="Corbett";
+        // //alert (s);
+        // //alert(s.length);
+        // alert(s.toUpperCase());
+
+        // var s="We are called the pioneers of \"East\" direction";
+        // alert (s);
+
+        //slice/substring/substr
+
+        let s="HelloWorldWelcomeJavascript";
+        // alert(s.slice(7,20));
+       // alert(s.slice(-20,-7));
+        //alert(s.slice(-7));
+        //alert(s.slice(7));
+        document.getElementById("original").innerHTML=s;
+document.getElementById('l').innerHTML=s.length;
+        var s1=s.substr(7,20);
+
+        document.getElementById("p1").innerHTML=s1;
+
+    </script>
+</body>
+</html> 
+
+
+
+
+</head>
+<body>
+    <p id="original"></p>
+    <h1>Using Substr</h1>
+    <!-- <h1>Using Substr</h1> -->
+    <p id='l'></p>
+
+<h1>Using Slice</h1>
+
+        //slice/substring/substr
+
+        let s="HelloWorldWelcomeJavascript";
+        //let s="HelloWorldWelcomeJavascript";
+
+
+        // alert(s.slice(7,20));
+       // alert(s.slice(-20,-7));
+        //alert(s.slice(-7));
+        //alert(s.slice(7));
+        document.getElementById("original").innerHTML=s;
+document.getElementById('l').innerHTML=s.length;
+        var s1=s.substr(7,20);
+//         document.getElementById("original").innerHTML=s;
+// document.getElementById('l').innerHTML=s.length;
+        //var s1=s.substring(-20,-7);
+        //var replacedStr=s.replace('Hello','HELLO');
+        var g="Greetings";
+//var concatenatedStr=s.concat(s,g);
+// var j=new String();
+// j=j.concat(s,g);
+
+
+// var j="   Hello      ";
+// document.getElementById("p2").innerHTML=j.length +" chars with spaces";
+//j=j.concat(s,g);
+
+// var n=j.trim();
+
+        document.getElementById("p1").innerHTML=s1;
+//         document.getElementById("p1").innerHTML=n;
+//         alert(n.length);
+
+let s="HelloWorld";//10
+// var s1=s.padStart(15,0);
+// alert(s1);
+
+var s1=s.padEnd(15,'%');
+alert(s1);
+
+    </script>
+</body>
+</html> 
+</html>
+
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+    <script>
+        //var s="Jim";
+        //s+="Corbett";
+        //alert(s);
+        //alert(s.length);
+        //alert(s.toUpperCase());
+        //var s="We are called the poineers of\"East\"direction";
+        //alert(s);
+        //slice/substring/substr
+        let s="Hello World Welcome Javascript";
+        //alert(s.slice(7,20));
+        //alert(s.slice(-20,-7));
+        //alert(-7);
+        //alert(7);
+        alert(s.substr(7,20));
+        </script>
+        </head>
+        </html>-->

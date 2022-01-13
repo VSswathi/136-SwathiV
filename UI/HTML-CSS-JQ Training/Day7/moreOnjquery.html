@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+        function sayhello() {
+            alert("hello");
+        }
+        //$(document).ready(sayhello());
+        $(document).ready(function() {
+            //sayhello();
+            // var text = $('body').text();
+            // alert("text()" + text);
+            // var html = $('body').html();
+            // alert("html()" + html);
+            // var val = $('body').val();
+            // alert(val);
+            $('#b1').click(function() {
+
+                //var d=$('a').attr("href");
+                //var d1=$('a').text();
+                //alert("Site"+d1+"is accessible on"+d);
+                var t = $('p').text();
+                alert('the paragraph contains the following' + t);
+                var r = $('p').attr("id");
+                alert("IT is in the paragraph with id" + r);
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <input type="text" id="t1" value="Suku" />
+    <p id="p1">Hello from <b> para</b>of the page</p>
+    <p id="p2">Hello from second<b> para</b>of the page</p>
+    <button id="b1"> Click here</button>
+    <a href="https://www.google.com">google</a>
+    <button id="b2">Click here</button>
+    <button id="b3">Click here</button>
+</body>
+
+</html>

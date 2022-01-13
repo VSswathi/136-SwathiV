@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+         /* div>p{ */
+            /* All p who r child of div */
+            /* color:darkmagenta */
+        /* }  */
+
+        /* div>span{
+            color:darkmagenta
+        } */
+
+        /* div + p{
+            color:darkmagenta
+        } */
+
+        p:first-child
+        {
+color:indianred
+
+        }
+
+        p:last-of-type
+        {
+background-color: lightsalmon;
+
+        }
+
+        a:hover{
+            font-size: larger;
+        }
+
+        p~ul{
+            /*Color all ul preceding p*/
+            color:darkmagenta
+        }
+
+        a[href^="https"]
+        {
+color: red;
+
+        }
+
+a[href$="html"]
+        {
+color: grey;
+
+        }
+    </style>
+</head>
+
+<body>
+    <table name="ProductList" width="100%" height="200" border="2">
+            <th><img src="mobilephone.jpg" alt="laptopimage" style="width: 100px;;"/></th>
+                <th><td><center><select name="Prod" id="Products">
+                    <option value="Mobile">mobile phone</option>
+                    <option value="Laptop">laptop</option>
+                    <option value="CPU">cpu</option>
+                    <option value="Monitor">monitor</option>
+                    <option value="Keyboard">keyboard</option></select></center></td></th>
+                    <th><img src="mobilephone.jpg" alt="laptopimage" style="width: 100px;;"/></th>
+                <th><input type="button" name="AddtoCart" value="addtocart"></th>
+     <a href="https://www.google.com">google</a>
+     <a href="https://www.yahoo.com">Yahoo</a>
+     <a href="Login.html">Login</a>
+     </table>
+     </body>
+     </html>

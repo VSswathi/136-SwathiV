@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Kendo UI Snippet</title>
+
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2021.3.1207/styles/kendo.default-v2.min.css" />
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2021.3.1207/js/kendo.all.min.js"></script>
+</head>
+
+<body>
+    <div id="grid"></div>
+    <script>
+        $("#grid").kendoGrid({
+            columns: [{
+                field: "name"
+            }, {
+                field: "age"
+            }],
+            dataSource: {
+                data: [{
+                    name: "Jane Doe",
+                    age: 30
+                }, {
+                    name: "John Doe",
+                    age: 33
+                }]
+            }
+        });
+    </script>
+</body>
+
+</html>

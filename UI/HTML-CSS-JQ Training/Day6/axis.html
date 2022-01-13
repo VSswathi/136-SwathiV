@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+      $(document).ready(function(){
+$('#tohide').hide();
+
+
+$('#showlogin').click(function(){
+    $('#tohide').show();
+});
+
+$('#showDebitCardNo').click(function(){
+    $('#tohide').show();
+});
+
+      });
+
+
+  </script>
+</head>
+<body>
+
+<div class="container">
+  <h3><center>AXIS BANK</h3></center>
+  <ul class="nav nav-tabs">
+    <li class="active"><a id="showlogin">LOGIN</a></li>
+    
+  <li > <a id="debitcardno">debitcardno</a></li>
+                           
+    <li>  <a id="mPIN">mPIN</a></li> 
+   
+    <div id="tohide">
+        <center>
+    
+            <form>
+                    <fieldset>
+                      
+ <legend>Login</legend>
+ <label for="userid">Enter User id</label>
+ <input type="text" id="userid" name="userid" required />
+ <br/>
+ <label for="pwd">Enter Password</label>
+ <input type="password" id="pwd" name="pwd" required />
+ <br/><br/>
+ <input type="submit" value="Submit" /><br/><br/><br/>
+ <button type="button" class="btn btn-primary">LOGIN</button>
+ <br/><br/>
+ <a href="Firsttimeuser?Register">first time user?Register</a>
+ <a href="Forgotpassword">Forgotpassword</a>
+ <a href="Enable login id">Enableloginid</a>
+
+
+            
+                    </fieldset>
+                </form>
+                
+              
+                
+                </center>
+    </div>
+    </li>
+  </ul>
+  <li><a id="showDebitCardNo">Debitcard No.</a>
+    <div id="tohide">
+        <center>
+            <form>
+                <fieldset>
+                    <label for="cardno">Enter card no.</label>
+                    <input type="text" id="cardno" name="cardno" required />
+                        <br/>
+                        <label for="pin">Enter pin</label>
+                        <input type="password" id="pin" name="pin" required />
+                        <br/>
+                        <input type="button" value="Login" name="Login" />
+
+                </fieldset></form></center>
+    </div>
+  <br>
+  <p><strong>Note:</strong> This example shows how to create a basic navigation tab. It is not toggleable/dynamic yet (you can't click on the links to display different content)- see the last example in the Bootstrap Tabs and Pills Tutorial to find out how this can be done.</p>
+</div>
+
+</body>
+</html>
